@@ -173,8 +173,15 @@ ul {
   border: 0;
 }
 .hero {
+  background-color: #c4c4c4;
+  width: 1600px;
+  height: 600px;
+  margin-right: auto;
+  margin-left: auto;
   padding-top: 200px;
   padding-bottom: 200px;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../image/hero/hero.jpg');
 }
 /*#endregion*/
 /*#region Оссобенности*/
@@ -465,3 +472,18 @@ ul {
   margin-bottom: 0;
 }
 /*#endregion*/
+/* HEAD ICONS*/
+.header-icon {
+  width: 16px;
+  height: 12px;
+  fill: currentColor;
+  margin-right: 10px;
+}
+
+.tel-icon {
+  width: 10px;
+  height: 16px;
+  fill: currentColor;
+  margin-right: 10px;
+}
+/*SVG - Наши особенности*/
