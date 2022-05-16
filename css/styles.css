@@ -254,6 +254,9 @@ ul {
 }
 /*#endregion*/
 /*#region  Наша Команда TEAM*/
+.image {
+  display: block;
+}
 .team .second-title {
   font-weight: 500;
   font-size: 16px;
@@ -517,7 +520,7 @@ ul {
   margin-bottom: 0;
 }
 /*#endregion*/
-/* HEAD ICONS*/
+/*#region HEAD ICONS*/
 .header-icon {
   width: 16px;
   height: 12px;
@@ -542,7 +545,8 @@ ul {
   margin-bottom: 30px;
   border-radius: 4px;
 }
-/* CLIENT LOGO SVG*/
+/*#endregion*/
+/*#region CLIENT LOGO SVG*/
 .client-title {
   margin-bottom: 50px;
 }
@@ -562,6 +566,10 @@ ul {
   border: 1px solid #afb1b8;
   border-radius: 4px;
 }
+.client-item:hover,
+.client-item:focus {
+  border-color: var(--color-button);
+}
 .client-item:not(:last-child) {
   margin-right: 30px;
 }
@@ -572,4 +580,26 @@ ul {
 .company-logo {
   width: 106px;
   height: 60px;
+  fill: #afb1b8;
 }
+.company-logo:hover,
+.company-logo:focus {
+  fill: var(--color-button);
+}
+/*#endregion*/
+/*#region Footer social icon*/
+.one {
+  display: flex;
+}
+.title-social {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+/*#endregion*/
