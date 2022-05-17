@@ -451,6 +451,11 @@ ul {
   padding-right: 22px;
   padding-left: 22px;
 }
+.button:hover,
+.button:focus {
+  background-color: var(--color-button);
+  color: var(--backgr-header);
+}
 .filtr .button {
   padding-top: 6px;
   padding-bottom: 6px;
@@ -546,10 +551,10 @@ ul {
 .bgr-icon {
   display: flex;
   background-color: #f5f4fa;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  padding-right: 100px;
-  padding-left: 100px;
+  height: 120px;
+  justify-content: center;
+  align-items: center;
+
   margin-bottom: 30px;
   border-radius: 4px;
 }
@@ -564,19 +569,27 @@ ul {
 }
 
 .client-item {
-  display: flex;
   width: 170px;
   height: 92px;
+}
+.client-link {
+  display: flex;
 
   align-items: center;
   justify-content: center;
+  width: 100%;
+  height: 100%;
 
   border: 1px solid #afb1b8;
   border-radius: 4px;
 }
-.client-item:hover,
-.client-item:focus {
+.client-link:hover,
+.client-link:focus {
   border-color: var(--color-button);
+}
+.client-link:hover .company-logo,
+.client-link:focus .company-logo {
+  fill: var(--color-button);
 }
 .client-item:not(:last-child) {
   margin-right: 30px;
@@ -590,13 +603,10 @@ ul {
   height: 60px;
   fill: #afb1b8;
 }
-.company-logo:hover,
-.company-logo:focus {
-  fill: var(--color-button);
-}
+
 /*#endregion*/
 /*#region Footer social icon*/
-.one {
+.footer-container {
   display: flex;
   align-items: baseline;
 }
